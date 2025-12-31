@@ -1,86 +1,83 @@
 .home-wrapper {
   background-color: #f3f0eb;
-  padding-top: 10px;
+  padding: 10px 60px 0px 60px;
 }
 
-/* Gallery row */
-.gallery {
-  min-height: 400px;
-}
 
-/* Column wrapper */
-.drink {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+.drink-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  gap: 90px;
+  margin-bottom: 30px;
 }
 
 .drink-img {
-  width: 100%;      /* image fills its column */
-  max-width: 100%;  /* prevents overflow */
-  height: auto;     /* keeps aspect ratio */
-  display: block;
+  width: 100%;
+  max-width: 260px;
   object-fit: cover;
 }
 
+/* Offsets like the design */
+.drink-img.center {
+  margin-top: 120px;
+}
 
-.drink3 { margin-right: 200px !important; }
-.drink4 { margin-top: 100px !important; min-width: 300px; }
-.drink5 { margin-left: 350px !important; }
+.drink-img.right {
+  margin-top: 40px;
+}
 
 
-/* Typography */
+.title-quote-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .section-number {
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-family: 'Stint Ultra Condensed', sans-serif;
+  font-size: 1.1rem;
 }
 
 .drink-title-1 {
-  font-size: 5rem;
-  font-weight: 900;
-  margin-top: -20px;
-  font-family: "Sint Ultra Condensed", sans-serif;
+  font-family: 'Stint Ultra Condensed', sans-serif;
+  font-size: 9rem;
+  
+  line-height: 1;
 }
 
 .quote-text {
-  font-family: "Sint Ultra Condensed", sans-serif;
-  font-size: 1.3rem;
   font-family: "Times New Roman", serif;
+  font-size: 1.3rem;
+  max-width: 360px;
+  text-align: right;
 }
 
-.title-quote-row {
-  margin-top: 60px;
-}
 
-/* MOBILE FIX */
-@media (max-width: 768px) {
-  .drink {
-    margin: 0 0 30px;
+@media (max-width: 992px) {
+  .drink-gallery {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-items: center;
   }
 
-  .drink-img {
-    width: 100%;
-    max-width: 95%;
-    height: auto;
-  }
-.drink3 {
-  margin: 0 auto !important;
-}
-
-.drink4 {
-  margin: 15px auto !important;
-  min-width: 150px;
-}
-
-.drink5 {
-  margin: 10px auto !important;
-}
-
-  .drink-title-1 {
-    font-size: 3rem;
+  .drink-img.center,
+  .drink-img.right {
+    margin-top: 0;
   }
 
   .title-quote-row {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 20px;
+  }
+
+  .quote-text {
+    text-align: center;
+  }
+
+  .drink-title-1 {
+    font-size: 3.5rem;
   }
 }

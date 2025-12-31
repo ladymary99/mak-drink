@@ -1,10 +1,9 @@
 @font-face {
-  font-family: "Sint Ultra Condensed";
-  src: url("./assets/fonts/SintUltraCondensed.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Stint Ultra Condensed';
+  src: url('./assets/StintUltraCondensed-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 body {
-  font-family: "Sint Ultra Condensed", sans-serif;
+  font-family: 'Stint Ultra Condensed', sans-serif;
 }
