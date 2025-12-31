@@ -1,3 +1,4 @@
+
 import { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import "./GalleryMenu.css";
@@ -16,12 +17,11 @@ const categories = [
   { id: "04", label: "Monsters", img: imgMonsters },
 ];
 
-const GalleryMenu = () => {
+const GalleryMenu = ({ onHoverCategory }) => {
   const [active, setActive] = useState(categories[0]);
   const imageRef = useRef(null);
   const itemRefs = useRef([]);
 
-  // Animate big image on change
   useEffect(() => {
     gsap.fromTo(
       imageRef.current,
@@ -37,15 +37,15 @@ const GalleryMenu = () => {
           <div
             key={cat.id}
             ref={(el) => (itemRefs.current[index] = el)}
-            className={`gallery-item ${
-              active.id === cat.id ? "active" : ""
-            }`}
+            className={`gallery-item ${active.id === cat.id ? "active" : ""}`}
             onMouseEnter={() => {
               setActive(cat);
+              onHoverCategory(cat.label); // 🔥 CONNECTED
 
               gsap.fromTo(
                 itemRefs.current[index],
-                { opacity: 0.5, x: -20 }
+                { opacity: 0.5, x: -20 },
+                { opacity: 1, x: 0, duration: 0.4 }
               );
             }}
           >

@@ -1,7 +1,7 @@
 // GalleryPage.jsx
 import { useState } from "react";
-import GalleryMenu from "./GalleryMenu";
-import DrinkGallery from "./DrinkGallery";
+import GalleryMenu from "./Menu/GalleryMenu";
+import DrinkGallery from "./Gallery/DrinkGallery";
 
 const GalleryPage = () => {
   const [activeCategory, setActiveCategory] = useState("Ultra");
