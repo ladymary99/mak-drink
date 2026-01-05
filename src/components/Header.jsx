@@ -1,16 +1,13 @@
-import "./Header.css";
-import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";   // <-- FIXED
+import logo from "../assets/logo.png";
 
 export default function Header() {
   return (
     <header className="header">
-      <nav className="container-fluid py-3 d-flex align-items-center justify-content-between">
-
+      <nav className=" py-3 d-flex align-items-center justify-content-between">
         {/* LEFT LINKS */}
         <div className="d-flex gap-4 nav-links">
-          <Link to="/about">About us</Link>
-          <Link to="/menu">Our menu</Link>
+          <a href="#about">About us</a>
+          <a href="#menu">Our menu</a>
         </div>
 
         {/* CENTER LOGO */}
@@ -20,8 +17,8 @@ export default function Header() {
 
         {/* RIGHT LINKS */}
         <div className="d-flex gap-4 nav-links">
-          <Link to="/reservations">Reservations</Link>
-          <Link to="/contact">Contact us</Link>
+          <a href="#reservations">Reservations</a>
+          <a href="#contact">Contact us</a>
         </div>
       </nav>
     </header>

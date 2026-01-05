@@ -1,6 +1,4 @@
 import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
-import './ContactCard.css';
-
 
 const ContactCard = () => {
   return (

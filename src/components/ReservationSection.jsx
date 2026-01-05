@@ -1,5 +1,3 @@
-import "./ReservationSection.css";
-
 const openingTimes = [
   { day: "Monday", open: "10:00", close: "01:00" },
   { day: "Tuesday", open: "12:00", close: "01:00" },

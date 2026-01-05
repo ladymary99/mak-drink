@@ -1,6 +1,8 @@
 @font-face {
   font-family: 'Stint Ultra Condensed';
-  src: url('./assets/StintUltraCondensed-Regular.ttf') format('truetype');
+  src: url('/src/assets/StintUltraCondensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
 }
 

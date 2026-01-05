@@ -1,18 +1,16 @@
-import "./DrinkGallery.css";
+import mainImg from "../assets/mak-drink-7.png";
 
-import mainImg from "../../assets/mak-drink-7.png";
+import drink8 from "../assets/mak-drink-8.png";
+import drink9 from "../assets/mak-drink-9.png";
+import drink10 from "../assets/drinks.jpg";
+import drink11 from "../assets/mak-drink-11.png";
+import drink12 from "../assets/ultra5.png";
 
-import drink8 from "../../assets/mak-drink-8.png";
-import drink9 from "../../assets/mak-drink-9.png";
-import drink10 from "../../assets/drinks.jpg";
-import drink11 from "../../assets/mak-drink-11.png";
-import drink12 from "../../assets/ultra5.png";
-
-import ultra1 from "../../assets/ultra1.jpg";
-import ultra2 from "../../assets/ultra2.jpg";
-import ultra3 from "../../assets/ultra3.jpg";
-import ultra4 from "../../assets/ultra4.jpg";
-import ultra5 from "../../assets/ultra5.png";
+import ultra1 from "../assets/ultra1.jpg";
+import ultra2 from "../assets/ultra2.jpg";
+import ultra3 from "../assets/ultra3.jpg";
+import ultra4 from "../assets/ultra4.jpg";
+import ultra5 from "../assets/ultra5.png";
 
 const drinksByCategory = {
   ultra: [
